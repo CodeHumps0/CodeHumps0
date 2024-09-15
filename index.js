@@ -6,6 +6,21 @@ humburger.addEventListener('click', ()=> {
 });
 
 
+// mode set
+function mode(){
+    let buttonElement = document.querySelector('.js-button');
+    if(buttonElement.innerHTML === 'Dark'){
+        buttonElement.innerHTML = 'white';
+        document.body.classList.add('white-mode');
+        document.body.form.label.classList.add('label1')
+    }else{
+        buttonElement.innerHTML = 'Dark';
+        document.body.classList.remove('white-mode'); 
+    }
+    
+}
+
+
 
 
 // Get form elements and table body
