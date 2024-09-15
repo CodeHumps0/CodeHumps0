@@ -246,4 +246,26 @@ th, td {
     .hamburger{
         display: flex;
     }
+    .track-product form {
+    width: 80%;
+    height: 100%;
+    display: grid;
+    max-width: 600px;
+    max-height:400px;
+    overflow: hidden;
+}
+.track-product form label{
+    font-size: clamp(10px,4vw,18px);
+}
+.track-product form input{
+    padding: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    outline: #c0cf9d;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #c0cf9d;
+    color: pointer;
+    
+}
 }
