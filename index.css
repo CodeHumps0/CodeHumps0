@@ -5,9 +5,10 @@
 }
 
 body{
+    
     font-family: Arial, sans-serif;
     overflow-x: hidden;
-    background-color: #131414;
+    background-color: rgb(12, 12, 12);
     color: white;
 }
 
@@ -21,7 +22,7 @@ body{
 .sidebar{
     padding: 3px;
     width: 250px;
-    background-color: #131414;
+    background-color:  #c0cf9d;
     color: white;
     padding-top: 1rem;
     position: fixed;
@@ -143,15 +144,16 @@ footer{
 
 /*Track your product css*/
 .track-product{
-    position: absolute;
+    position: relative;
     top: 10%;
     width: 100%;
     height: auto;
-    padding: 10px;
+    padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 .track-product .head{
     font-size: clamp(40px,4vw,70px);
@@ -164,6 +166,7 @@ footer{
     height: 100%;
     display: grid;
     max-width: 600px;
+    margin-bottom: 100px;
 }
 .track-product form label{
     font-size: clamp(10px,4vw,25px);
@@ -192,7 +195,7 @@ form button{
 }
 form button:hover{
     border: 1px solid #C5F5FA;
-    color: #C5F5FA;
+    color: black;
     background-color: transparent;
     transition: .4s;
 }
@@ -210,14 +213,16 @@ form button:hover{
 .clear:hover{
     background-color: transparent;
     border: 1px solid #C5F5FA;
-    color: #C5F5FA;
+    color: black;
     transition: .4s;
 
 }
 
 table{
-    width: clamp(80%, 1vw, 100%);
+    width: 60%;
+    align-self: center;
     border-collapse: collapse;
+    
 }
 table,th ,td {
     border: 1px solid #c0cf9d;
@@ -246,27 +251,6 @@ th, td {
     .hamburger{
         display: flex;
     }
-    .track-product form {
-    width: 80%;
-    height: 100%;
-    display: grid;
-    max-width: 600px;
-    max-height:400px;
-    overflow: hidden;
-}
-.track-product form label{
-    font-size: clamp(10px,4vw,18px);
-}
-.track-product form input{
-    padding: 5px;
-    font-size: 15px;
-    font-weight: bold;
-    outline: #c0cf9d;
-    background-color: transparent;
-    border: none;
-    border-bottom: 1px solid #c0cf9d;
-    color: pointer;
-    
 }
 .mode{
     
@@ -303,4 +287,3 @@ th, td {
         color: black;
     }
 }
-
